@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- taiwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Elsie:wght@400;900&family=Italianno&family=Kameron:wght@400..700&family=Montenegrin+Gothic+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<!--  -->
+<style>
+    *{
+         font-family: "Playfair Display", serif;
+    }
+</style>
+</head>
+<body >
+    <section class=" bg-center p-4">
+        <div class="mt-10 bg-blue-500/20 rounded-lg mx-20 p-3 mb-5 ">
+            <h1 class="text-2xl font-bold text-center text-blue-600 ">WELCOME USER</h1>
+            <h3 class="text-xl text-center text-blue-600">Online Banking Service</h3>
+        </div>
+
+        <div class="flex items-center justify-center gap-10 mt-10">
+            <div class="w-1/4 bg-blue-200 p-5 rounded-lg ">
+                <h1 class="text-center">Deposit</h1>
+                <form class="flex flex-col items-center justify-center  p-3 gap-3 ">
+                    <input id="damount" class="border border-blue-300 bg-white rounded w-full p-1" type="number" name="" id="" placeholder="Enter amount">
+                    <input id="daccount" class="border border-blue-300 bg-white rounded w-full p-1" type="number" name="" id="" placeholder="Enter account number">
+                    <button type="button" class="bg-blue-700 p-1 rounded shadow-xl text-white" onclick="deposit()">Deposit</button>
+                </form>
+                <div id="result1"></div>
+            </div>
+            <div class="w-1/4 bg-blue-200 p-5 rounded-lg">
+                <h1 class="text-center">Withdarw</h1>
+                <form class="flex flex-col items-center justify-center   p-3 gap-3 ">
+                    <input id="wamount" class="border border-blue-300 bg-white rounded w-full p-1" type="number" name="" id="" placeholder="Enter amount">
+                    <input id="waccount" class="border border-blue-300 bg-white rounded w-full p-1" type="number" name="" id="" placeholder="Enter account number">
+                    <button type="button" class="bg-blue-700 p-1 rounded shadow-xl text-white" onclick="withdraw()">Withdraw</button>
+                </form>
+                <div id="result2"></div>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-white"><button class="bg-red-500 rounded p-1" onclick="logout()">Logout</button></div>
+    </section>
+</body>
+<script src="./acc.js"></script>
+</html>
